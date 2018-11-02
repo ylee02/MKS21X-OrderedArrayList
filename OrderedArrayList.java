@@ -8,7 +8,5 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
     super(startingCapacity);
   }
 
-  public void mySort() {
-
-  }
+  
 }
