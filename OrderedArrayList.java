@@ -13,7 +13,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
 		  super.add(element);
 	  }
 	  else if (this.size() == 1){
-		  if (this.get(0).compareTo(element) >= 0) {
+		  if (this.get(0).compareTo(element) <= 0) {
 			  super.add(element);
 		  }
 		  else {
@@ -24,7 +24,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
 		  boolean test = true;
 		  int i = 0;
 		  while (test) {
-			  if (element.compareTo(this.get(i)) >= 0) {
+			  if (element.compareTo(this.get(i)) <= 0) {
 				  super.add(i, element);
 				  test = false;
 			  }
